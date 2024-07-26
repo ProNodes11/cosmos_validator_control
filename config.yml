@@ -1,0 +1,23 @@
+---
+# controls whether the dashboard is enabled.
+enable_dashboard: yes
+# What TCP port the dashboard will listen on. Only the port is controllable for now.
+listen_port: 8888
+# hide_logs is useful if the dashboard will be posted publicly. It disables the log feed,
+# and obscures most node-related details. Be aware this isn't fully vetted for preventing
+# info leaks about node names, etc.
+hide_logs: no
+# How long to wait before alerting that a node is down.
+node_down_alert_minutes: 3
+# Node Down alert Pagerduty Severity
+node_down_alert_severity: critical
+
+telegram:
+  # Alert via telegram? Note: also supersedes chain-specific settings
+  enabled: yes
+  # API key ... talk to @BotFather
+  api_key: ""
+  # The group ID for the chat where messages will be sent. Google how to find this, will include better info later.
+  channel: ""
+
+chains:
