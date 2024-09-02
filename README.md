@@ -33,6 +33,12 @@ CTRL+C
 ./tenderduty -f /путь/к/config.yml
 CTRL+A+D
 ```
+9) Запустите скрин для дополнительного мониторинга:
+```bash
+screen -S balances
+python3 additional.py
+CTRL+A+D
+```
 
 Почитать больше про config.yml:
 https://github.com/blockpane/tenderduty/blob/main/docs/config.md
